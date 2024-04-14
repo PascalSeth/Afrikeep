@@ -16,7 +16,7 @@ import {toast} from 'sonner'
 import { ZodError } from 'zod'
 import { useRouter } from 'next/navigation'
 
-export default function page() {
+export default function Logout() {
     const router=useRouter();
     const{register,handleSubmit, formState:{errors}}=useForm<TAuthCredentialsValidator>({
         resolver:zodResolver(AuthCredentialsValidator)

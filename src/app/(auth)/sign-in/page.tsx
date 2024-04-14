@@ -16,7 +16,7 @@ import {toast} from 'sonner'
 import { ZodError } from 'zod'
 import { useRouter, useSearchParams } from 'next/navigation'
 
-export default function page() {
+export default function Login() {
     const searchParams= useSearchParams()
     const isSeller = searchParams.get('as')==='seller'
     const router=useRouter();

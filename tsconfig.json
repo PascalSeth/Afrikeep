@@ -36,7 +36,7 @@
     "src/**/*.ts", // Adjusted to include all TypeScript files in the src directory
     "src/**/*.tsx",
     "src/components/Header.js" // Adjusted to include all TypeScript/JSX files in the src directory
-  ],
+, "src/app/pages/AiSERVICES/Concepts.js"  ],
   "exclude": [
     "node_modules"
   ]
