@@ -12,7 +12,7 @@
 @apply text-center items-center
 }
 .headerButton{
-  @apply bg-green-400 hover:bg-green-300 hover:cursor-pointer text-white font-medium  p-[0.5vh] rounded-md w-[8vw] items-center text-center
+  @apply bg-green-400 hover:bg-green-300 hover:cursor-pointer text-white font-medium  p-[0.5vh] rounded-md w-20 items-center text-center
 }
 .pageslink{
   @apply p-[1.7vh] lg:w-fit text-[13px] font-semibold text-gray-500 hover:cursor-pointer hover:bg-gray-200 

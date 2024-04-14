@@ -24,13 +24,13 @@ const Header= async() => {
   return (
     <div className='flex flex-col justify-between sticky top-0  items-center overflow-x-hidden bg-white z-[809]'>
       
-    <div className='container bg-white items-center flex px-[3vw] justify-between  max-lg:hidden border-b border-b-gray-300'>
+    <div className='container bg-white items-center flex px-[3vw] justify-between   border-b border-b-gray-300'>
     <Link href="/" className='left-header items-center'>
 
   <Image src={logo} alt='logo' width={80} height={40} className='object-contain bg-none max-w-[150px] max-h-[70px]' />
 </Link>
 
-      <div className='middle-header text-[2vh]  flex font-semibold justify-center items-center text-gray-700'>
+      <div className='middle-header text-[2vh] max-lg:hidden  flex font-semibold justify-center items-center text-gray-700'>
         <Link href="/pages/"  className='textLink'>Service</Link>
         <Link href="/pages/" className='textLink'>Software</Link>
         <Link href="/pages/" className='textLink'>Job</Link>
@@ -44,9 +44,12 @@ const Header= async() => {
         </div>
         )}
          {user ? (<p> 
-          <UserAccountNav user={user}/>
+          <UserAccountNav user={user}/>  
+            <div className='flex items-center hover:cursor-pointer mr-4'>
+            <Cart/>
+          </div>
          </p>):(
-            <div className='headerButton mr-4'>
+            <div className='headerButton  mr-4'>
             <Link href='/sign-up'>Sign Up</Link>
           </div>
         )}
@@ -55,9 +58,7 @@ const Header= async() => {
           
        
       </div>
-      <div className='flex items-center hover:cursor-pointer mr-4'>
-            <Cart/>
-          </div>
+  
     </div>
     <div className='header2 w-full  max-lg:hidden border-b border-b-gray-200 rounded-b-3xl flex items-center justify-evenly'>
       <Link href="/pages/GraphicsDesign" className='pageslink' >Crop Production</Link>
